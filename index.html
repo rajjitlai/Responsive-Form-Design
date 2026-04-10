@@ -15,14 +15,22 @@
     </head>
     <body>
 
+        <!-- Background decorative blobs -->
+        <div class="background-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
         <div class="container">
             <div class="forms">
+                <!-- Login Form -->
                 <div class="form login">
                     <span class="title">Login</span>
 
                     <form action="#">
                         <div class="input-field">
-                            <input type="text" placeholder="Enter your email"
+                            <input type="email" placeholder="Enter your email"
                                 required>
                             <i class="uil uil-envelope icon"></i>
                         </div>
@@ -39,11 +47,11 @@
                                 <label for="logCheck" class="text">Remember me</label>
                             </div>
 
-                            <a href="#" class="text">Forgot password?</a>
+                            <a href="#" class="text forgot-link">Forgot password?</a>
                         </div>
 
                         <div class="input-field button">
-                            <input type="button" value="Login">
+                            <input type="submit" value="Login">
                         </div>
                     </form>
 
@@ -62,10 +70,10 @@
                         <div class="input-field">
                             <input type="text" placeholder="Enter your name"
                                 required>
-                            <i class="uil uil-user"></i>
+                            <i class="uil uil-user icon"></i>
                         </div>
                         <div class="input-field">
-                            <input type="text" placeholder="Enter your email"
+                            <input type="email" placeholder="Enter your email"
                                 required>
                             <i class="uil uil-envelope icon"></i>
                         </div>
@@ -90,12 +98,36 @@
                         </div>
 
                         <div class="input-field button">
-                            <input type="button" value="Signup">
+                            <input type="submit" value="Signup">
                         </div>
                     </form>
 
                     <div class="login-signup">
                         <span class="text">Already a member?
+                            <a href="#" class="text login-link">Login Now</a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Forgot Password Form -->
+                <div class="form forgot">
+                    <span class="title">Forgot Password</span>
+                    <p class="text subtitle">Enter your email and we'll send you a link to reset your password.</p>
+
+                    <form action="#">
+                        <div class="input-field">
+                            <input type="email" placeholder="Enter your email"
+                                required>
+                            <i class="uil uil-envelope icon"></i>
+                        </div>
+
+                        <div class="input-field button">
+                            <input type="submit" value="Send Link">
+                        </div>
+                    </form>
+
+                    <div class="login-signup">
+                        <span class="text">Remember your password?
                             <a href="#" class="text login-link">Login Now</a>
                         </span>
                     </div>
